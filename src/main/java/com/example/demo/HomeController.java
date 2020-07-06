@@ -11,7 +11,7 @@ public class HomeController {
 	
 	@GetMapping
 	public String Hello() {
-		return "hello from my server";
+		return "hello from my server after auto build";
 	}
 
 }
