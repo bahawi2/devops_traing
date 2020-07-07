@@ -7,7 +7,7 @@ pipeline {
     //}
 
     stages {
-        stage("Build") {
+       /**  stage("Build") {
             steps {
                 sh "mvn -version"
                
@@ -21,11 +21,11 @@ pipeline {
                 sh 'mvn clean package sonar:sonar'
               }
             }
-        }
+        }**/
         stage("Quality Gate") {
           steps{
                       script{
-                      withSonarQubeEnv('sonarserver') { 
+                      withSonarQubeEnv('SonarQubeSeverver') { 
                       sh "mvn sonar:sonar"
                        }
                       timeout(time: 1, unit: 'HOURS') {
