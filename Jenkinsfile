@@ -1,3 +1,4 @@
+#!groovy
 pipeline {
     agent any
 
@@ -37,6 +38,7 @@ pipeline {
             cleanWs()
         }
     }
+}
 }
 
 //git credentialsId: 'git', url: 'ssh://git@192.168.15.5:30022/root/firstproject.git'
