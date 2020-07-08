@@ -40,7 +40,7 @@ pipeline {
     }
      stage("Build docker image ") {
        steps {
-         script{
+         script {
            docker build -t devops .
          }
        }
