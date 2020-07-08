@@ -22,7 +22,7 @@ pipeline {
               }
             }
         }**/
-        stage("Quality Gate") {
+        stage("Quality  Gate") {
           steps{
                       script{
                       withSonarQubeEnv('SonarQubeSeverver') { 
