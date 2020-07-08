@@ -38,6 +38,13 @@ pipeline {
                   }
             }
     }
+     stage("Build docker image ") {
+       steps {
+         script{
+           docker build -t devops .
+         }
+       }
+
     }
 
     post {
