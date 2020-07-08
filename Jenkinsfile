@@ -44,6 +44,7 @@ pipeline {
            docker build -t devops .
          }
        }
+     }
 
     }
 
