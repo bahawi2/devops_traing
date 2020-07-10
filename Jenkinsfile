@@ -64,11 +64,11 @@ stage('ansible playbook'){
 
     }
 
-    post {
+  /**   post {
         always {
             cleanWs()
         }
-    }
+    }*/
 
 }
 
